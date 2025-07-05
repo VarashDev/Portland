@@ -1,7 +1,9 @@
 npm create astro@latest
 npx astro add tailwind
 ######################## pages/index.astro
-import './src/styles/global.css'
+---
+import "../styles/global.css";
+---
 
 	<body class="min-h-screen">
         h1 class="text-4xl text-teal-900 font-bold my-5"
