@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import srcImage from "../assets/src.png";
+import srcImage from "../assets/band2.jpg";
 import { Image } from "astro:assets";
 ---
 
@@ -18,14 +18,12 @@ import { Image } from "astro:assets";
 		<main class="px-24 max-w-7xl mx-auto w-full max-sm:px-5">
 			<h1 class="text-4xl text-teal-900 font-bold my-5">Fishing near Portland, Oregon</h1>
 			<p>asd</p>
-			<img src={srcImage.src} alt="" />
+			<!-- <img src={srcImage.src} alt="Fishing near Portland, Oregon" /> -->
 			<Image
 				src={srcImage}
 				loading="eager"
 				alt=""
 				quality={"high"}
-				widths={[240, 540, 720, srcImage.width]}
-				sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${srcImage.width}px`}
 				/>
 		</main>
 		
