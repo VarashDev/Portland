@@ -24,6 +24,9 @@ stage them. Click Always and continue.
 Click Publish button
 
 
+############################# images
+### pages/index.astro
+import srcImage from "../assets/src.jpg"
 
 
 
