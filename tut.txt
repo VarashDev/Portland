@@ -1,0 +1,28 @@
+npm create astro@latest
+npx astro add tailwind
+######################## pages/index.astro
+import './src/styles/global.css'
+
+	<body class="min-h-screen">
+        h1 class="text-4xl text-teal-900 font-bold my-5"
+        main class="px-24 max-w-7xl mx-auto w-full max-sm:px-5"
+-----------------------------
+npm run dev
+
+######### GitHub
++ -> title -> Create Repository.
+
+### Commit your local code to GitHub
+3 dots -> Remote > Add Remote
+Select Add remote from GitHub
+Choose the one you created for this project
+commit message -> initial commit -> and press the Commit button
+You may see a message telling you that you have no “staged” commits, and asking you if you want to 
+stage them. Click Always and continue.
+Click Publish button
+
+
+
+
+
+
