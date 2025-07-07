@@ -5,11 +5,14 @@ import MyH2 from "../../components/MyH2.astro";
 import MyH3 from "../../components/MyH3.astro";
 import srcImage from "../../assets/salmon-fishing-near-portland-oregon.webp";
 import { Image } from "astro:assets";
-import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Salmon Fishing near Portland, Oregon"
 description="Discover the top places for salmon fishing near Portland, Oregon, in this 2025 guide. Learn about rivers, lakes, gear tips, licenses, and more for all skill levels."
+url="https://portland.oregonfishingforum.com/salmon/"
+type="article"
+site_name="Oregon Fishing Forum"
+ogimage={srcImage.src}
 >
     <center>
 			<MyH1 text="Salmon Fishing near Portland, Oregon" />
