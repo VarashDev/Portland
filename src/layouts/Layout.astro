@@ -18,6 +18,8 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
 		<meta property="og:type" content={type} />
 		<meta property="og:site_name" content={site_name} />
 		<meta property="og:image" content={ogimage} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:image" content={ogimage} />
 	</head>
 	<body class="min-h-screen bg-amber-100">
 		<main class="px-24 py-4 max-w-7xl mx-auto w-full max-sm:px-5">
