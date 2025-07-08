@@ -31,3 +31,14 @@ import srcImage from "../assets/src.jpg"
 
 
 
+
+
+
+
+a water colour painting of sturgeon fishing in Oregon. make the aspect ratio 16:9
+
+og:image 1200 x 630
+
+
+
+
