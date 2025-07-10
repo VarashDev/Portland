@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import MyH1 from "../../components/MyH1.astro";
 import srcImage from "../../assets/trout-fishing-near-portland-oregon.webp";
 import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Trout Fishing near Portland, Oregon"
@@ -109,6 +110,9 @@ ogimage={srcImage.src}
     when cooler temperatures prevail. It's an urban waterway, but with the right gear and patience, anglers have pulled in 
     respectable catches.
 </p>
+
+<p>Read more about <Link href="/trout/best-spots/" text="Best trout fishing spots near Portland, Oregon" /></p>
+
 <h2>Types of Trout Found Near Portland</h2>
 <p>
     Oregon's trout diversity adds flavor to your fishing adventures. Here are the key species you're likely to encounter:
