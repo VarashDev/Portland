@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import MyH1 from "../../components/MyH1.astro";
 import srcImage from "../../assets/bass-fishing-near-portland-oregon.webp";
 import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Bass Fishing near Portland, Oregon"
@@ -249,6 +250,9 @@ ogimage={srcImage.src}
         <strong>Why fish here:</strong> Easy access points, slow current, lots of smallmouth action.
     </li>
 </ul>
+
+<br>
+<p>Read more about <Link href="/bass/best-spots/" text="Best bass fishing spots near Portland, Oregon" /></p>
 <h2>
     Gear and Equipment Recommendations
 </h2>
