@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import MyH1 from "../../components/MyH1.astro";
 import srcImage from "../../assets/salmon-fishing-near-portland-oregon.webp";
 import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Salmon Fishing near Portland, Oregon"
@@ -248,6 +249,10 @@ ogimage={srcImage.src}
         <strong>Fishing Style:</strong> Drift fishing with eggs or plugs
     </li>
 </ul>
+<br>
+
+<p>Read more about <Link href="/salmon/best-spots/" text="Best salmon fishing spots near Portland, Oregon" /></p>
+
 <h2>Best Times to Catch Salmon Near Portland</h2>
 <p>
     Planning your trip around the salmon runs can make or break your success. Here’s a general calendar:
