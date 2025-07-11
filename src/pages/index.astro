@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import MyH1 from "../components/MyH1.astro";
 import srcImage from "../assets/fishing-near-portland-oregon.webp";
+import HeroImage from "../assets/fishing-near-portland-oregon.png";
 import { Image } from "astro:assets";
 import Link from "../components/Link.astro";
 ---
@@ -18,16 +19,23 @@ ogimage={srcImage.src}
 			<p class="mb-4">Discover the top places for fishing near Portland, Oregon, in this 2025 guide. Learn about 
 				rivers, lakes, gear tips, licenses, and more.</p>
 
-			<Image
+			<!-- <Image
 				src={srcImage}
 				alt="Fishing near Portland, Oregon"
 				loading={"eager"}
 				fetchpriority={"high"}
                 class="rounded-xl shadow mx-auto"
-				/>
-				<br>
+				/> -->
     </div>
-
+			<Image
+				src={HeroImage}
+				alt="Fishing near Portland, Oregon"
+                width={1344}
+                height={768}
+                layout='constrained'
+                class="rounded-xl shadow mx-auto"
+				/>
+                <br>
 			<h2>Introduction to Fishing Near Portland, Oregon</h2>
 <p>
     Fishing near Portland, Oregon, is more than a weekend hobby - it's a cherished pastime woven into the region's culture 
