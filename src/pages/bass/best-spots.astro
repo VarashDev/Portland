@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/best-bass-fishing-spots-portland-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
 ---
 <Layout 
 title="Best bass fishing spots near Portland, Oregon"
@@ -270,4 +271,6 @@ ogimage={srcImage.src}
     Tight lines and happy fishing!
 </p>
 
+<br>
+<Bests />
 </Layout>

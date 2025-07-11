@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/best-trout-fishing-spots-portland-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
 ---
 <Layout 
 title="Best trout fishing spots near Portland, Oregon"
@@ -128,4 +129,6 @@ ogimage={srcImage.src}
     Trout fishing near <strong>Portland</strong> offers amazing diversity: from classic rivers and hidden mountain lakes to urban ponds perfect for an afternoon outing. Tight lines and enjoy the adventure!
 </p>
 
+<br>
+<Bests />
 </Layout>

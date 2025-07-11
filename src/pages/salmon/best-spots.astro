@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/best-salmon-fishing-spots-portland-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
 ---
 <Layout 
 title="Best salmon fishing spots near Portland, Oregon"
@@ -200,5 +201,8 @@ ogimage={srcImage.src}
         For those with boats, <strong>Columbia River fishing</strong> at Kelly Point and Sauvie Island is excellent in summer and fall.
     </li>
 </ul>
+<br>
+
+<Bests />
 
 </Layout>
