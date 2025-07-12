@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MyH1 from "../components/MyH1.astro";
-// import srcImage from "../assets/fishing-near-portland-oregon.webp";
 import HeroImage from "../assets/fishing-near-portland-oregon.png";
 import { Image } from "astro:assets";
-import Link from "../components/Link.astro";
 ---
 <Layout 
 title="Fishing near Portland, Oregon"
@@ -16,16 +14,7 @@ ogimage={HeroImage.src}
 >
     <div class="text-center">
 			<MyH1 text="Fishing near Portland, Oregon" />
-			<p class="mb-4">Discover the top places for fishing near Portland, Oregon, in this 2025 guide. Learn about 
-				rivers, lakes, gear tips, licenses, and more.</p>
-
-			<!-- <Image
-				src={srcImage}
-				alt="Fishing near Portland, Oregon"
-				loading={"eager"}
-				fetchpriority={"high"}
-                class="rounded-xl shadow mx-auto"
-				/> -->
+			<p class="mb-4">Discover the top places for fishing near Portland, learn about rivers, lakes, gear tips, licenses, and more.</p>
     </div>
 			<Image
 				src={HeroImage}
@@ -38,7 +27,7 @@ ogimage={HeroImage.src}
                 class="rounded-xl shadow mx-auto"
 				/>
                 <br>
-			<h2>Introduction to Fishing Near Portland, Oregon</h2>
+			<h2>Introduction to fishing near Portland</h2>
 <p>
     Fishing near Portland, Oregon, is more than a weekend hobby - it's a cherished pastime woven into the region's culture 
 	and natural beauty. Whether you're a seasoned angler or just learning how to cast a line, the area's diverse rivers, 
@@ -46,7 +35,7 @@ ogimage={HeroImage.src}
 </p>
 <p>
     Nestled between the Cascade Mountains and the Pacific Coast, Portland is the perfect launching point for both freshwater 
-	and coastal fishing. Within just an hour's drive, you can access prime spots for <Link href="/salmon/", text="salmon" />, <Link href="/steelhead/", text="steelhead" />, <Link href="/trout/", text="trout" />, <Link href="/bass/", text="bass" />, and 
+	and coastal fishing. Within just an hour's drive, you can access prime spots for salmon, steelhead, trout, bass, and 
 	even sturgeon. And with Oregon's commitment to conservation, many of these waters are managed to support healthy fish 
 	populations and sustainable recreation.
 </p>
@@ -54,28 +43,30 @@ ogimage={HeroImage.src}
     This guide covers everything you need to know to enjoy fishing near Portland - from top spots and fish species to 
 	regulations and expert tips. Let's dive in.
 </p>
-<h2>Types of Fishing You Can Enjoy Near Portland</h2>
-<h3>Freshwater Fishing</h3>
+<h3>Types of Fishing You Can Enjoy Near Portland</h3>
+<h4>Freshwater Fishing</h4>
 <p>
     Freshwater fishing is the most popular type in the Portland area. Rivers like the Willamette and Columbia are teeming 
 	with salmon, trout, steelhead, and bass. These waterways offer both boat and bank fishing opportunities.
 </p>
-<h3>Saltwater Fishing (Coastal Trips)</h3>
+<h4>Saltwater Fishing (Coastal Trips)</h4>
 <p>
     Though Portland isn't on the coast, saltwater fishing trips to the Pacific Ocean are accessible via Astoria or Newport - 
 	just a 2-hour drive. Here, you'll find halibut, lingcod, rockfish, and even tuna charters in summer.
 </p>
-<h3>Fly Fishing</h3>
+<h4>Fly Fishing</h4>
 <p>
     Fly fishing enthusiasts flock to the Sandy and Clackamas Rivers. These fast-moving streams are ideal for targeting 
 	trout and steelhead with dry flies and nymphs, especially during early spring and fall runs.
 </p>
-<h3>Ice Fishing (Seasonal &amp; Rare)</h3>
+<h4>Ice Fishing (Seasonal &amp; Rare)</h4>
 <p>
     Ice fishing near Portland is rare but not impossible. Higher elevation lakes like Trillium occasionally freeze in 
 	mid-winter. Safety should always be your top priority when venturing out in such conditions.
 </p>
-<h2>Popular Fishing Spots Within an Hour of Portland</h2>
+
+<h2>Best Fishing Spots Near Portland</h2>
+
 <h3>Willamette River</h3>
 <p>
     This major river flows right through Portland and offers year-round fishing for sturgeon, bass, and seasonal salmon runs. Best accessed from downtown docks or via kayak.
@@ -109,6 +100,11 @@ ogimage={HeroImage.src}
 <p>
     Formed by a dam on the Clackamas River, this lake is great for bank anglers. It’s stocked regularly and features picnic areas and easy trails.
 </p>
+
+
+
+
+
 <h2>Family-Friendly Fishing Locations</h2>
 <p>
     Families looking to introduce kids to fishing will find several beginner-friendly spots:
