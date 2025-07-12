@@ -1,18 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MyH1 from "../components/MyH1.astro";
-import srcImage from "../assets/fishing-near-portland-oregon.webp";
+// import srcImage from "../assets/fishing-near-portland-oregon.webp";
 import HeroImage from "../assets/fishing-near-portland-oregon.png";
 import { Image } from "astro:assets";
 import Link from "../components/Link.astro";
 ---
 <Layout 
 title="Fishing near Portland, Oregon"
-description="Discover the top places for fishing near Portland, Oregon, in this 2025 guide. Learn about rivers, lakes, gear tips, licenses, and more."
+description="Discover the top places for fishing near Portland, learn about rivers, lakes, gear tips, licenses, and more."
 url="https://portland.oregonfishingforum.com/"
 type="website"
 site_name="Oregon Fishing Forum"
-ogimage={srcImage.src}
+ogimage={HeroImage.src}
 >
     <div class="text-center">
 			<MyH1 text="Fishing near Portland, Oregon" />
