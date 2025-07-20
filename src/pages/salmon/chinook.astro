@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/chinook-salmon-fishing-portland-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
-import Bests from "../../components/Bests.astro";
+import Salmons from "../../components/Salmons.astro";
 ---
 <Layout 
 title="Chinook (King) salmon fishing near Portland, Oregon"
@@ -492,5 +492,5 @@ ogimage={srcImage.src}
 </p>
 
 <br>
-<Bests />
+<Salmons salmon="chinook"/>
 </Layout>
