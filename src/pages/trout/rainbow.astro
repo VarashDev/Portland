@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import MyH1 from "../../components/MyH1.astro";
 import srcImage from "../../assets/rainbow-trout.jpg";
 import { Image } from "astro:assets";
+import Trouts from "../../components/Trouts.astro";
 ---
 <Layout 
 title="Rainbow Trout Fishing near Portland, Oregon"
@@ -512,14 +513,7 @@ ogimage={srcImage.src}
 <p>
     So grab your gear, check the stocking schedules, and hit one of the many amazing waters around Portland. You might just land the fish—and the memories—of a lifetime.
 </p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
 
+
+<Trouts trout="rainbow" />
 </Layout>

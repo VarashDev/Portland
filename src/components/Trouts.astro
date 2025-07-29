@@ -1,0 +1,27 @@
+---
+const { trout } = Astro.props;
+---
+{trout != "rainbow" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/trout/rainbow/">Rainbow trout fishing near Portland, Oregon</a>
+    </div>
+    )
+}
+{trout != "cutthroat" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/trout/cutthroat/">Cutthroat trout fishing near Portland, Oregon</a>
+    </div>
+    )
+}
+{trout != "brook" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/trout/brook/">Brook trout fishing near Portland, Oregon</a>
+    </div>
+    )
+}
+{trout != "brown" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/trout/brown/">Brown trout fishing near Portland, Oregon</a>
+    </div>
+    )
+}

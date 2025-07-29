@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import MyH1 from "../../components/MyH1.astro";
 import srcImage from "../../assets/cutthroat-trout.png";
 import { Image } from "astro:assets";
+import Trouts from "../../components/Trouts.astro";
 ---
 <Layout 
 title="Cutthroat Trout Fishing near Portland, Oregon"
@@ -374,5 +375,5 @@ ogimage={srcImage.src}
     Cutthroat Trout fishing near Portland, Oregon is a blend of urban convenience and wild adventure. With diverse waterways, abundant public access, and breathtaking scenery, the region is a paradise for trout anglers. Whether you're a fly fisher chasing surface rises or a casual angler enjoying a weekend getaway, Portland offers unforgettable experiences and fish tales worth retelling.
 </p>
     
-
+<Trouts trout="cutthroat" />
 </Layout>
