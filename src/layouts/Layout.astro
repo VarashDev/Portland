@@ -47,15 +47,6 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
 			</div>
 			<div class="bg-teal-900 text-white text-center p-4">© 2006-2025 <a href="https://www.oregonfishingforum.com">Oregon Fishing Forum</a></div>
 		</footer>
-  <!-- <script>
-    // Toggle mobile menu
-    const menuBtn = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script> -->
 
   <script>
   // Mobile menu toggle
@@ -63,9 +54,14 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
     document.getElementById('mobile-menu').classList.toggle('hidden');
   });
 
-  // Mobile dropdown toggle
-  document.getElementById('mobile-dropdown-btn').addEventListener('click', () => {
-    document.getElementById('mobile-dropdown').classList.toggle('hidden');
+    // Mobile dropdown toggle services
+  document.getElementById('mobile-dropdown-btn-spicies').addEventListener('click', () => {
+    document.getElementById('mobile-dropdown-spicies').classList.toggle('hidden');
+  });
+
+  // Mobile dropdown toggle services
+  document.getElementById('mobile-dropdown-btn-services').addEventListener('click', () => {
+    document.getElementById('mobile-dropdown-services').classList.toggle('hidden');
   });
 </script>
 
