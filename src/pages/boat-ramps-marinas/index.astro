@@ -1,0 +1,242 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-portland-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Boat Ramps & Marinas in Portland, Oregon"
+description="Plan your launch or overnight moorage around the Columbia and Willamette. This neutral directory highlights public boat ramps and marinas in the Portland area, with links to official pages for hours, fees, and rules."
+url="https://portland.oregonfishingforum.com/boat-ramps-marinas/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Boat Ramps & Marinas in Portland, Oregon" />
+        <p>
+            Plan your launch or overnight moorage around the Columbia and Willamette. This neutral directory highlights public boat ramps and marinas in the Portland area, with links to official pages for hours, fees, and rules.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Launch smarter</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Check seasonal hours, parking fees, and dock access before you go to avoid surprises at the ramp.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Pick the right water</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Choose between the Columbia’s big water or the Willamette’s in‑town access based on wind, tide, and target species.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Know the rules</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Permits, life‑jacket laws, and seasonal closures vary. Use official pages linked below for current info.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Plan overnight stops</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Find marinas with short‑term moorage near downtown and on Hayden Island.</p>
+    </div>
+  </div>
+
+  <!-- Ramps directory heading + hint -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Public Boat Ramps (Portland Area)</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Always verify hours/fees on the official page before you launch.</p>
+  </div>
+
+  <!-- Ramps: table (md+) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Ramp</th>
+          <th class="px-5 py-3 font-semibold">Waterbody / Area</th>
+          <th class="px-5 py-3 font-semibold">Typical Hours</th>
+          <th class="px-5 py-3 font-semibold">Managing Agency</th>
+          <th class="px-5 py-3 font-semibold">Details</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Willamette Park Boat Ramp</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Willamette River — South Waterfront</td>
+          <td class="px-5 py-4">~5:00am–10:00pm</td>
+          <td class="px-5 py-4">Portland Parks & Recreation</td>
+          <td class="px-5 py-4"><a href="https://www.portland.gov/parks/docks" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Ramp info</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Cathedral Park Boat Ramp</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Willamette River — St. Johns</td>
+          <td class="px-5 py-4">~5:00am–midnight</td>
+          <td class="px-5 py-4">Portland Parks & Recreation</td>
+          <td class="px-5 py-4"><a href="https://www.portland.gov/parks/docks" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Ramp info</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Sellwood Riverfront Hand Launch</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Willamette River — Sellwood (non‑motorized)</td>
+          <td class="px-5 py-4">~5:00am–midnight</td>
+          <td class="px-5 py-4">Portland Parks & Recreation</td>
+          <td class="px-5 py-4"><a href="https://www.portland.gov/parks/sellwood-riverfront-park" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Park page</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">M. James Gleason Memorial Boat Ramp</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Columbia River — NE PDX / Marine Dr</td>
+          <td class="px-5 py-4">4:30am–sunset (seasonal)</td>
+          <td class="px-5 py-4">Metro</td>
+          <td class="px-5 py-4"><a href="https://www.oregonmetro.gov/parks/boat-ramps/m-james-gleason-memorial-boat-ramp" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Ramp page</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Chinook Landing Marine Park</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Columbia River — Fairview (east metro)</td>
+          <td class="px-5 py-4">4:30am–sunset (seasonal)</td>
+          <td class="px-5 py-4">Metro</td>
+          <td class="px-5 py-4"><a href="https://www.oregonmetro.gov/parks/boat-ramps/chinook-landing-marine-park" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Park page</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Ramps: cards (sm) -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Willamette Park Boat Ramp</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Willamette — South Waterfront · ~5:00am–10:00pm</p>
+      <a href="https://www.portland.gov/parks/docks" target="_blank" rel="noopener" class="mt-3 inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Ramp info</a>
+    </article>
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Cathedral Park Boat Ramp</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Willamette — St. Johns · ~5:00am–midnight</p>
+      <a href="https://www.portland.gov/parks/docks" target="_blank" rel="noopener" class="mt-3 inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Ramp info</a>
+    </article>
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Sellwood Riverfront Hand Launch</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Willamette — Sellwood · Non‑motorized</p>
+      <a href="https://www.portland.gov/parks/sellwood-riverfront-park" target="_blank" rel="noopener" class="mt-3 inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Park page</a>
+    </article>
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">M. James Gleason Memorial Boat Ramp</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Columbia — NE PDX / Marine Dr · 4:30am–sunset</p>
+      <a href="https://www.oregonmetro.gov/parks/boat-ramps/m-james-gleason-memorial-boat-ramp" target="_blank" rel="noopener" class="mt-3 inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Ramp page</a>
+    </article>
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Chinook Landing Marine Park</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Columbia — Fairview · 4:30am–sunset</p>
+      <a href="https://www.oregonmetro.gov/parks/boat-ramps/chinook-landing-marine-park" target="_blank" rel="noopener" class="mt-3 inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Park page</a>
+    </article>
+  </div>
+
+  <!-- Marinas directory heading -->
+  <div class="mt-12 mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Marinas & Moorage (Portland Area)</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Call for transient (short‑term) availability before you arrive.</p>
+  </div>
+
+  <!-- Marinas: table (md+) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Marina</th>
+          <th class="px-5 py-3 font-semibold">Location / Waterbody</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+          <th class="px-5 py-3 font-semibold">Notes</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">RiverPlace Marina</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Downtown — Willamette River</td>
+          <td class="px-5 py-4"><a href="tel:+15032418283" class="text-blue-600 hover:underline">(503) 241-8283</a></td>
+          <td class="px-5 py-4"><a href="https://www.riverplacemarina.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">riverplacemarina.com</a></td>
+          <td class="px-5 py-4">Short‑term/transient moorage; call ahead.</td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Tomahawk Bay Marina (Columbia Crossings)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Hayden Island — Columbia River</td>
+          <td class="px-5 py-4"><a href="tel:+15032832444" class="text-blue-600 hover:underline">(503) 283-2444</a></td>
+          <td class="px-5 py-4"><a href="https://columbiacrossings.com/tomahawk/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">columbiacrossings.com/tomahawk</a></td>
+          <td class="px-5 py-4">Large marina; call for slip availability.</td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Jantzen Bay Marina (Columbia Crossings)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Hayden Island — Columbia River</td>
+          <td class="px-5 py-4"><a href="tel:+15032832444" class="text-blue-600 hover:underline">(503) 283-2444</a></td>
+          <td class="px-5 py-4"><a href="https://columbiacrossings.com/jantzen/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">columbiacrossings.com/jantzen</a></td>
+          <td class="px-5 py-4">Covered slips; fuel nearby.</td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">McCuddy’s Marinas (Jantzen Beach)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">NE Marine Dr — Columbia River</td>
+          <td class="px-5 py-4 space-x-1"><a href="tel:+15032897879" class="text-blue-600 hover:underline">(503) 289-7879</a> <span class="text-slate-400">/</span> <a href="tel:+15038089992" class="text-blue-600 hover:underline">(503) 808-9992</a></td>
+          <td class="px-5 py-4"><a href="https://mccuddysmarina.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">mccuddysmarina.com</a></td>
+          <td class="px-5 py-4">Moorage; boatyard/travel lift available.</td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Portland Yacht Club (Members & Reciprocal)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">NE Marine Dr — Columbia River</td>
+          <td class="px-5 py-4"><a href="tel:+15032851922" class="text-blue-600 hover:underline">(503) 285-1922</a></td>
+          <td class="px-5 py-4"><a href="https://portlandyc.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">portlandyc.com</a></td>
+          <td class="px-5 py-4">Member moorage; limited reciprocal guest moorage.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Marinas: cards (sm) -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">RiverPlace Marina</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Downtown — Willamette River</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032418283" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 241-8283</a>
+        <a href="https://www.riverplacemarina.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Tomahawk Bay Marina</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Hayden Island — Columbia River</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032832444" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 283-2444</a>
+        <a href="https://columbiacrossings.com/tomahawk/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Jantzen Bay Marina</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Hayden Island — Columbia River</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032832444" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 283-2444</a>
+        <a href="https://columbiacrossings.com/jantzen/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">McCuddy’s Marinas (Jantzen Beach)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">NE Marine Dr — Columbia River</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032897879" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 289-7879</a>
+        <a href="https://mccuddysmarina.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Portland Yacht Club (Members & Reciprocal)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">NE Marine Dr — Columbia River</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032851922" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 285-1922</a>
+        <a href="https://portlandyc.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Safety & permits tip -->
+  <div class="mt-10 rounded-2xl border border-amber-200 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-900/20 p-4 text-amber-900 dark:text-amber-200">
+    <p class="text-sm">Tip: In Oregon, most paddlecraft 10 ft+ need a Waterway Access Permit; out‑of‑state motorboats need an Aquatic Invasive Species permit. Children 12 and under must wear a USCG‑approved life jacket when a boat is underway. Check <a href="https://myodfw.com/articles/waterway-access-and-aquatic-invasive-species-permits" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90" target="_blank" rel="noopener">permit rules</a> and <a href="https://www.oregon.gov/osmb/boater-info/pages/equipment-and-regulations.aspx" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90" target="_blank" rel="noopener">equipment laws</a> before you go.</p>
+  </div>
+</section>
+
+
+</Layout>

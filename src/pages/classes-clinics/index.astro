@@ -1,0 +1,228 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-portland-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Fishing Classes & Clinics in Portland, Oregon"
+description="From beginner basics to advanced Spey casting, these Portland‑area classes and clinics will get you on the water faster. This neutral directory links to official providers so you can check the latest dates, prices, and availability."
+url="https://portland.oregonfishingforum.com/classes-clinics/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Classes & Clinics in Portland, Oregon" />
+        <p>
+            From beginner basics to advanced Spey casting, these Portland‑area classes and clinics will get you on the water faster. This neutral directory links to official providers so you can check the latest dates, prices, and availability.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Master the fundamentals</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Casting mechanics, fish behavior, reading water, and safe river positioning.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Rigging that works</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Leaders, knots, indicator rigs, two‑hand setups, and fly selection by season.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Hands‑on practice</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Small groups with on‑water coaching so you build muscle memory the right way.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Community & mentorship</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Clubs and shops offer seminars, fly‑tying nights, volunteer mentors, and trips.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading + hint -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Portland‑Area Class & Clinic Providers</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Always confirm dates, pricing, and meeting locations on the provider’s site.</p>
+  </div>
+
+  <!-- Directory: responsive table (md+) and cards (sm) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Provider</th>
+          <th class="px-5 py-3 font-semibold">Focus</th>
+          <th class="px-5 py-3 font-semibold">Format</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">The Portland Fly Shop (NW Portland)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Fly casting, fly‑tying, steelhead/Spey schools</td>
+          <td class="px-5 py-4">Group classes & clinics</td>
+          <td class="px-5 py-4"><a href="tel:+15032658060" class="text-blue-600 hover:underline">(503) 265-8060</a></td>
+          <td class="px-5 py-4"><a href="https://theportlandflyshop.com/fly-fishing-classes-portland/" class="text-blue-600 hover:underline" rel="nofollow">theportlandflyshop.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Northwest Fly Fishing Outfitters (NE Portland)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Intro to fly fishing, casting, tying; events</td>
+          <td class="px-5 py-4">Classes, seminars & clinics</td>
+          <td class="px-5 py-4"><a href="tel:+15032521529" class="text-blue-600 hover:underline">(503) 252-1529</a></td>
+          <td class="px-5 py-4"><a href="https://www.flyshopnw.com/pages/nwffo-classes-events" class="text-blue-600 hover:underline" rel="nofollow">flyshopnw.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Orvis — Lake Oswego</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Fly Fishing 101/201, casting clinics</td>
+          <td class="px-5 py-4">Free intro classes & paid schools</td>
+          <td class="px-5 py-4"><a href="tel:+15035987680" class="text-blue-600 hover:underline">(503) 598-7680</a></td>
+          <td class="px-5 py-4"><a href="https://stores.orvis.com/us/oregon/lakeoswego" class="text-blue-600 hover:underline" rel="nofollow">stores.orvis.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">ODFW Workshops & Family Fishing Events</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Beginner fishing instruction; family‑friendly</td>
+          <td class="px-5 py-4">Hands‑on workshops & free events</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4"><a href="https://myodfw.com/workshops-and-events" class="text-blue-600 hover:underline" target="_blank" rel="noopener">myodfw.com/workshops-and-events</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Association of Northwest Steelheaders</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Species‑specific clinics (e.g., plunking, steelhead)</td>
+          <td class="px-5 py-4">Clinics & community events</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4"><a href="https://nwsteelheaders.org/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">nwsteelheaders.org</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Sportsman’s Warehouse — Portland</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">In‑store seminars & how‑to events</td>
+          <td class="px-5 py-4">Classes & store events</td>
+          <td class="px-5 py-4"><a href="tel:+15037778700" class="text-blue-600 hover:underline">(503) 777-8700</a></td>
+          <td class="px-5 py-4"><a href="https://events.sportsmans.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">events.sportsmans.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Bass Pro Shops (formerly Cabela’s) — Tualatin</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Seasonal seminars & family events</td>
+          <td class="px-5 py-4">Store events & clinics</td>
+          <td class="px-5 py-4"><a href="tel:+15038222000" class="text-blue-600 hover:underline">(503) 822-2000</a></td>
+          <td class="px-5 py-4"><a href="https://stores.basspro.com/us/or/tualatin/7555-southwest-nyberg-street.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">basspro.com (Tualatin)</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Fly Fishers Club of Oregon</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Educational programs, intro classes, mentoring</td>
+          <td class="px-5 py-4">Club seminars & clinics</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4"><a href="https://flyfisherscluboregon.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">flyfisherscluboregon.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Card layout for small screens -->
+  <div class="md:hidden space-y-4">
+    <!-- Card template; duplicate for each provider -->
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">The Portland Fly Shop (NW Portland)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Fly casting, fly‑tying, steelhead/Spey schools</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032658060" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 265-8060</a>
+        <a href="https://theportlandflyshop.com/fly-fishing-classes-portland/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Northwest Fly Fishing Outfitters (NE Portland)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Intro to fly fishing, casting, tying; events</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032521529" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 252-1529</a>
+        <a href="https://www.flyshopnw.com/pages/nwffo-classes-events" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Orvis — Lake Oswego</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Fly Fishing 101/201, casting clinics</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035987680" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 598-7680</a>
+        <a href="https://stores.orvis.com/us/oregon/lakeoswego" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">ODFW Workshops & Family Fishing Events</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Beginner instruction for all ages</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://myodfw.com/workshops-and-events" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">See schedule</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Association of Northwest Steelheaders</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Species‑specific clinics & community events</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://nwsteelheaders.org/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Sportsman’s Warehouse — Portland</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">In‑store seminars & how‑to events</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15037778700" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 777-8700</a>
+        <a href="https://events.sportsmans.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Events</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Bass Pro Shops (formerly Cabela’s) — Tualatin</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Seasonal seminars & family events</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15038222000" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 822-2000</a>
+        <a href="https://stores.basspro.com/us/or/tualatin/7555-southwest-nyberg-street.html" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Store page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Fly Fishers Club of Oregon</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Educational programs, intro classes, mentoring</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://flyfisherscluboregon.com/" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose a class -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">How to choose the right class</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Match your goal</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">New to fishing? Start with ODFW family events or FF101. Want steelhead? Look for two‑hand/Spey schools.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Ask about class size</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Smaller groups mean more reps and feedback. Many shops cap on‑water clinics at 4–6 anglers.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Check what’s included</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Rod/reel/flies provided? Waders required? Are permits or park fees extra?</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Confirm location & access</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Some classes meet in‑shop; others are on local rivers or ponds. Verify meeting points and accessibility.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-900/20 p-4 text-amber-900 dark:text-amber-200">
+    <p class="text-sm">Tip: Oregon occasionally offers <span class="font-medium">Free Fishing Weekends</span> with no license/endorsements required. It’s a great time to pair a clinic with on‑water practice. See the <a href="https://myodfw.com/workshops-and-events/family-fishing-events-free-fishing-weekend-events" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90" target="_blank" rel="noopener">ODFW events calendar</a> for dates.</p>
+  </div>
+</section>
+
+
+
+</Layout>

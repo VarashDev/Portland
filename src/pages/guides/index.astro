@@ -1,0 +1,238 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-portland-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Fishing Guides in Portland, Oregon"
+description="Portland sits where the Columbia and Willamette meet - prime water for salmon, sturgeon, steelhead, trout, bass and more. Hiring a licensed guide boosts your odds with local knowledge, safe boats, and pro gear."
+url="https://portland.oregonfishingforum.com/guides/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Guides in Portland, Oregon" />
+        <p>
+            Portland sits where the Columbia and Willamette meet - prime water for salmon, sturgeon, steelhead, trout, bass and more. Hiring a licensed guide boosts your odds with local knowledge, safe boats, and pro gear.
+        </p>
+    </div>
+
+    <!-- Why book a guide? -->
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Dialed-in timing</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pros track run peaks, closures, tides and flows so you fish the best windows.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Access & safety</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Coast Guard–equipped boats, launch know‑how, safety briefings, and local permits.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">All gear included</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Rods, reels, bait, tackle—usually included. You bring license, layers, snacks.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Learn faster</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Hands‑on coaching for trolling, back‑bouncing, bobber‑dogging, and more.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading + hint -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Portland Guide Directory</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Confirm seasons, pricing, and meeting spots when you book.</p>
+  </div>
+
+  <!-- Directory: responsive table (md+) and cards (sm) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Guide Service</th>
+          <th class="px-5 py-3 font-semibold">Primary Species / Waters</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Lance Fisher Fishing</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Sturgeon, Salmon — Columbia &amp; Willamette</td>
+          <td class="px-5 py-4"><a href="tel:+15036806809" class="text-blue-600 hover:underline">(503) 680-6809</a></td>
+          <td class="px-5 py-4"><a href="https://lancefisherfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">lancefisherfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Pacific Drifter Guide Service</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia, Willamette, Sandy, Clackamas</td>
+          <td class="px-5 py-4"><a href="tel:+15037043219" class="text-blue-600 hover:underline">(503) 704-3219</a></td>
+          <td class="px-5 py-4"><a href="https://pacificdrifterguideservice.com/" class="text-blue-600 hover:underline" rel="nofollow">pacificdrifterguideservice.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Caleb’s Guide Service</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia &amp; Willamette</td>
+          <td class="px-5 py-4"><a href="tel:+15036801429" class="text-blue-600 hover:underline">(503) 680-1429</a></td>
+          <td class="px-5 py-4"><a href="https://calebsguideservice.com/" class="text-blue-600 hover:underline" rel="nofollow">calebsguideservice.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Hammond Guide Service</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Steelhead, Walleye — Columbia &amp; tributaries</td>
+          <td class="px-5 py-4"><a href="tel:+15038100909" class="text-blue-600 hover:underline">(503) 810-0909</a></td>
+          <td class="px-5 py-4"><a href="https://www.hammondguideservice.com/" class="text-blue-600 hover:underline" rel="nofollow">hammondguideservice.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Team Hookup Guide Service (Jack &amp; Brandon Glass)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia, Sandy, Clackamas</td>
+          <td class="px-5 py-4 space-x-1">
+            <a href="tel:+15032608285" class="text-blue-600 hover:underline">(503) 260-8285</a>
+            <span class="text-slate-400">/</span>
+            <a href="tel:+15032602315" class="text-blue-600 hover:underline">(503) 260-2315</a>
+          </td>
+          <td class="px-5 py-4"><a href="https://teamhookupfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">teamhookupfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Double M Outdoors (Portland Fishing Guides)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Walleye — Columbia &amp; Willamette</td>
+          <td class="px-5 py-4"><a href="tel:+15039565489" class="text-blue-600 hover:underline">(503) 956-5489</a></td>
+          <td class="px-5 py-4"><a href="https://doublemoutdoors.com/" class="text-blue-600 hover:underline" rel="nofollow">doublemoutdoors.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Columbia River Fishing Adventures (CRFA)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Walleye — Columbia (Portland to Astoria)</td>
+          <td class="px-5 py-4"><a href="tel:+15034903099" class="text-blue-600 hover:underline">(503) 490-3099</a></td>
+          <td class="px-5 py-4"><a href="https://columbiariverfishingadventures.com/" class="text-blue-600 hover:underline" rel="nofollow">columbiariverfishingadventures.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">FishAbility NW (Taylor Knight)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Accessible trips, Salmon, Sturgeon — Columbia/Willamette</td>
+          <td class="px-5 py-4"><a href="tel:+15039174450" class="text-blue-600 hover:underline">(503) 917-4450</a></td>
+          <td class="px-5 py-4"><a href="https://fishabilitynw.com/" class="text-blue-600 hover:underline" rel="nofollow">fishabilitynw.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Rivertrek NW (Capt. Wade Grant)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Sturgeon focus — Columbia/Willamette (Portland area)</td>
+          <td class="px-5 py-4"><a href="tel:+14588001200" class="text-blue-600 hover:underline">(458) 800-1200</a></td>
+          <td class="px-5 py-4"><a href="https://rivertreknw.com/" class="text-blue-600 hover:underline" rel="nofollow">rivertreknw.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Card layout for small screens -->
+  <div class="md:hidden space-y-4">
+    <!-- Card component template; duplicate for each guide -->
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Lance Fisher Fishing</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Sturgeon, Salmon — Columbia &amp; Willamette</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15036806809" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 680-6809</a>
+        <a href="https://lancefisherfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Pacific Drifter Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia, Willamette, Sandy, Clackamas</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15037043219" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 704-3219</a>
+        <a href="https://pacificdrifterguideservice.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Caleb’s Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia &amp; Willamette</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15036801429" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 680-1429</a>
+        <a href="https://calebsguideservice.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Hammond Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Steelhead, Walleye — Columbia &amp; tributaries</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15038100909" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 810-0909</a>
+        <a href="https://www.hammondguideservice.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Team Hookup Guide Service (Jack &amp; Brandon Glass)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Steelhead, Sturgeon — Columbia, Sandy, Clackamas</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032608285" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 260-8285</a>
+        <a href="tel:+15032602315" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 260-2315</a>
+        <a href="https://teamhookupfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Double M Outdoors (Portland Fishing Guides)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Walleye — Columbia &amp; Willamette</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15039565489" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 956-5489</a>
+        <a href="https://doublemoutdoors.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Columbia River Fishing Adventures (CRFA)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Salmon, Sturgeon, Walleye — Columbia (Portland to Astoria)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15034903099" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 490-3099</a>
+        <a href="https://columbiariverfishingadventures.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">FishAbility NW (Taylor Knight)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Accessible trips, Salmon, Sturgeon — Columbia/Willamette</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15039174450" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 917-4450</a>
+        <a href="https://fishabilitynw.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Rivertrek NW (Capt. Wade Grant)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Sturgeon focus — Columbia/Willamette (Portland area)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+14588001200" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(458) 800-1200</a>
+        <a href="https://rivertreknw.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">How to choose the right guide</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Match the season</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Spring Chinook (Mar–Jun), Fall Chinook/Coho (Aug–Nov), sturgeon most of the year with changing retention rules, summer steelhead, plus walleye.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Decide on style</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Power boat vs. drift boat; family‑friendly pacing vs. hard‑charging run‑and‑gun.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Confirm what’s included</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Gear, fish cleaning, rain gear, heaters, group size, and meeting location.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Accessibility needs</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Ask about mobility accommodations; some operators specialize in accessible trips.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-900/20 p-4 text-amber-900 dark:text-amber-200">
+    <p class="text-sm">Tip: Always check current regulations and required endorsements with <a href="https://myodfw.com/" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90" target="_blank" rel="noopener">ODFW</a> before you go. Seasons and rules change by waterbody and species.</p>
+  </div>
+</section>
+
+</Layout>

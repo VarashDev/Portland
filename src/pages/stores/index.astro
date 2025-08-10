@@ -1,0 +1,210 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-portland-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Fishing Stores (Tackle Shops) in Portland, Oregon"
+description="Need gear, local intel, or a quick spool? These Portland‑area fishing stores and fly shops have you covered. Use this neutral directory to find specialty fly shops and full‑line tackle retailers across the metro."
+url="https://portland.oregonfishingforum.com/stores/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Stores (Tackle Shops) in Portland, Oregon" />
+        <p>
+            Need gear, local intel, or a quick spool? These Portland‑area fishing stores and fly shops have you covered. Use this neutral directory to find specialty fly shops and full‑line tackle retailers across the metro.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Local conditions</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Up‑to‑date reports on river flows, seasonal runs, closures, and what’s actually working now.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Expert rigging</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Line spooling, terminal setups, leader knots, and species‑specific recommendations.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Try before you buy</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Hands‑on rod/reel feel, wader boot fits, and demos you can’t get online.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Community & classes</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Seminars, fly‑tying nights, and events that connect beginners and veterans alike.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading + hint -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Portland‑Area Fishing Stores & Fly Shops</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Call ahead for inventory and hours; some locations are metro‑area suburbs.</p>
+  </div>
+
+  <!-- Directory: responsive table (md+) and cards (sm) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Store / Shop</th>
+          <th class="px-5 py-3 font-semibold">Focus</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">The Portland Fly Shop (NW Portland)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Full‑service fly shop: trout, steelhead, salmon</td>
+          <td class="px-5 py-4"><a href="tel:+15032658060" class="text-blue-600 hover:underline">(503) 265-8060</a></td>
+          <td class="px-5 py-4"><a href="https://theportlandflyshop.com/" class="text-blue-600 hover:underline" rel="nofollow">theportlandflyshop.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Northwest Fly Fishing Outfitters (NE Portland)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Fly tackle & classes: trout, steelhead, destination travel</td>
+          <td class="px-5 py-4"><a href="tel:+15032521529" class="text-blue-600 hover:underline">(503) 252-1529</a></td>
+          <td class="px-5 py-4"><a href="https://www.flyshopnw.com/" class="text-blue-600 hover:underline" rel="nofollow">flyshopnw.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Portland / Delta Park</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Full‑line tackle, marine, hunting & apparel</td>
+          <td class="px-5 py-4"><a href="tel:+15032830044" class="text-blue-600 hover:underline">(503) 283-0044</a></td>
+          <td class="px-5 py-4"><a href="https://fishermans-marine.com/" class="text-blue-600 hover:underline" rel="nofollow">fishermans-marine.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Tigard</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Full‑line tackle & marine (SW metro)</td>
+          <td class="px-5 py-4"><a href="tel:+15035495066" class="text-blue-600 hover:underline">(503) 549-5066</a></td>
+          <td class="px-5 py-4"><a href="https://fishermans-marine.com/" class="text-blue-600 hover:underline" rel="nofollow">fishermans-marine.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Oregon City</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Full‑line tackle & marine (SE metro)</td>
+          <td class="px-5 py-4"><a href="tel:+15035573313" class="text-blue-600 hover:underline">(503) 557-3313</a></td>
+          <td class="px-5 py-4"><a href="https://fishermans-marine.com/" class="text-blue-600 hover:underline" rel="nofollow">fishermans-marine.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Sportsman’s Warehouse — Portland</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Big‑box fishing, camping & hunting</td>
+          <td class="px-5 py-4"><a href="tel:+15037778700" class="text-blue-600 hover:underline">(503) 777-8700</a></td>
+          <td class="px-5 py-4"><a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/portland/9401-se-82nd-ave" class="text-blue-600 hover:underline" rel="nofollow">sportsmans.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Bass Pro Shops (formerly Cabela’s) — Tualatin</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Large‑format fishing & hunting (south metro)</td>
+          <td class="px-5 py-4"><a href="tel:+15038222000" class="text-blue-600 hover:underline">(503) 822-2000</a></td>
+          <td class="px-5 py-4"><a href="https://stores.cabelas.com/" class="text-blue-600 hover:underline" rel="nofollow">cabelas.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Fish‑Field — Tualatin</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Tackle specialist: salmon, steelhead, surf, offshore</td>
+          <td class="px-5 py-4"><a href="tel:+19712456854" class="text-blue-600 hover:underline">(971) 245-6854</a></td>
+          <td class="px-5 py-4"><a href="https://fishfield.com/" class="text-blue-600 hover:underline" rel="nofollow">fishfield.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Orvis — Lake Oswego</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Fly fishing gear, apparel & classes (south metro)</td>
+          <td class="px-5 py-4"><a href="tel:+15035987680" class="text-blue-600 hover:underline">(503) 598-7680</a></td>
+          <td class="px-5 py-4"><a href="https://stores.orvis.com/us/oregon/lakeoswego" class="text-blue-600 hover:underline" rel="nofollow">stores.orvis.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Card layout for small screens -->
+  <div class="md:hidden space-y-4">
+    <!-- Card template; duplicate for each store -->
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">The Portland Fly Shop (NW Portland)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Full‑service fly shop: trout, steelhead, salmon</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032658060" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 265-8060</a>
+        <a href="https://theportlandflyshop.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Northwest Fly Fishing Outfitters (NE Portland)</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Fly tackle & classes: trout, steelhead, destination travel</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032521529" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 252-1529</a>
+        <a href="https://www.flyshopnw.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Portland / Delta Park</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Full‑line tackle, marine, hunting & apparel</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15032830044" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 283-0044</a>
+        <a href="https://fishermans-marine.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Tigard</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Full‑line tackle & marine (SW metro)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035495066" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 549-5066</a>
+        <a href="https://fishermans-marine.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Fisherman’s Marine & Outdoor — Oregon City</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Full‑line tackle & marine (SE metro)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035573313" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 557-3313</a>
+        <a href="https://fishermans-marine.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Sportsman’s Warehouse — Portland</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Big‑box fishing, camping & hunting</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15037778700" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 777-8700</a>
+        <a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/portland/9401-se-82nd-ave" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Bass Pro Shops (formerly Cabela’s) — Tualatin</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Large‑format fishing & hunting (south metro)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15038222000" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 822-2000</a>
+        <a href="https://stores.cabelas.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Fish‑Field — Tualatin</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Tackle specialist: salmon, steelhead, surf, offshore</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+19712456854" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(971) 245-6854</a>
+        <a href="https://fishfield.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Orvis — Lake Oswego</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Fly fishing gear, apparel & classes (south metro)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035987680" class="inline-flex items-center rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">(503) 598-7680</a>
+        <a href="https://stores.orvis.com/us/oregon/lakeoswego" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700">Website</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-900/20 p-4 text-amber-900 dark:text-amber-200">
+    <p class="text-sm">Tip: For current regulations, licensing, and stocking updates, check <a href="https://myodfw.com/" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90" target="_blank" rel="noopener">ODFW</a> before you head out.</p>
+  </div>
+</section>
+
+
+</Layout>

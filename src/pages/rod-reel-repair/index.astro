@@ -1,0 +1,159 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-portland-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Rod & Reel Repair, Line Spooling & Tuning in Portland, Oregon"
+description="Where to get reels serviced, rods repaired, and fresh line spooled around the Portland metro—plus quick tips for choosing the right shop."
+url="https://portland.oregonfishingforum.com/rod-reel-repair/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Rod & Reel Repair, Line Spooling & Tuning in Portland, Oregon" />
+        <p>
+            Where to get reels serviced, rods repaired, and fresh line spooled around the Portland metro—plus quick tips for choosing the right shop.
+        </p>
+    </div>
+
+<div class="mt-8 grid gap-6 lg:grid-cols-3">
+    <div class="lg:col-span-2 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950 shadow-sm">
+      <h2 class="text-lg font-semibold text-zinc-900 dark:text-white">Why use a pro for repair & spooling?</h2>
+      <ul class="mt-4 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+        <li class="flex gap-3"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">1</span><span>Cleaned & tuned reels cast smoother, last longer, and prevent mid‑trip failures.</span></li>
+        <li class="flex gap-3"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">2</span><span>Properly spooled line (right direction, tension & fill) reduces wind knots, memory and drag slip.</span></li>
+        <li class="flex gap-3"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">3</span><span>Pros can replace tips/guides, true reel seats, service drags & bearings, and help with manufacturer warranties.</span></li>
+      </ul>
+    </div>
+    <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-sky-50/60 dark:bg-sky-900/20">
+      <h3 class="text-base font-semibold text-sky-900 dark:text-sky-200">Quick prep tips</h3>
+      <ul class="mt-3 list-disc pl-5 text-sm text-sky-900/80 dark:text-sky-100/80 space-y-2">
+        <li>Bring the reel, the rod it lives on, and your current line (for respooling or backing reuse).</li>
+        <li>Know target species & technique—shops can match line type/strength and drag settings.</li>
+        <li>For warranty repairs, bring proof of purchase and model/serial numbers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Directory -->
+  <div class="mt-10">
+    <h2 class="text-lg font-semibold text-zinc-900 dark:text-white">Trusted shops & techs (Portland metro)</h2>
+    <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Call ahead to confirm services, pricing, and turnaround—some repairs are mail‑in only. Click to call or visit.</p>
+
+    <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Fisherman's Marine & Outdoor -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold text-zinc-900 dark:text-white">Fisherman’s Marine & Outdoor</h3>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Multi‑location</span>
+        </div>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Delta Park (Portland), Oregon City, Tigard</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li>Line spooling (in‑store); rod parts & accessories; referral for reel/rod repairs.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15035573313">Oregon City: (503) 557‑3313</a>
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15032830044">Delta Park: (503) 283‑0044</a>
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15035495066">Tigard: (503) 549‑5066</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://fishermans-marine.com/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </article>
+
+      <!-- Sportsman's Warehouse (Portland) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-zinc-900 dark:text-white">Sportsman’s Warehouse — Portland</h3>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">9401 SE 82nd Ave, Portland</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li><span class="font-medium">Services:</span> In‑store <span class="font-semibold">line spooling</span>; general tackle & accessories.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15037778700">(503) 777‑8700</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/portland/9401-se-82nd-ave" target="_blank" rel="noopener">Store page</a>
+        </div>
+      </article>
+
+      <!-- Fish-Field (Tualatin) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-zinc-900 dark:text-white">Fish‑Field — Tualatin</h3>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">12520–12540 SW Leveton Dr, Tualatin</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li><span class="font-medium">Services:</span> Bulk <span class="font-semibold">mono & braid spooling</span>; full tackle shop.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:19712456854">(971) 245‑6854</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://fishfield.com/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </article>
+
+      <!-- Orvis (Lake Oswego) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-zinc-900 dark:text-white">Orvis — Lake Oswego</h3>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Kruse Village, 4871 Meadows Rd Suite 175</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li><span class="font-medium">Services:</span> Fly <span class="font-semibold">reel tune‑up</span> & <span class="font-semibold">rod repair</span> via Orvis programs; fly line loading.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15035987680">(503) 598‑7680</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://stores.orvis.com/us/oregon/lakeoswego" target="_blank" rel="noopener">Store page</a>
+        </div>
+      </article>
+
+      <!-- Northwest Fly Fishing Outfitters -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-zinc-900 dark:text-white">Northwest Fly Fishing Outfitters</h3>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">10910 NE Halsey St, Portland</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li><span class="font-medium">Services:</span> Fly line loading/cleaning; guidance on <span class="font-semibold">warranty repairs</span> for major brands.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15032521529">(503) 252‑1529</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://www.flyshopnw.com/pages/about-us" target="_blank" rel="noopener">About & hours</a>
+        </div>
+      </article>
+
+      <!-- Royal Treatment Fly Fishing (West Linn) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-zinc-900 dark:text-white">Royal Treatment Fly Fishing — West Linn</h3>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">21570 Willamette Dr, West Linn</p>
+        <ul class="mt-3 text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
+          <li><span class="font-medium">Services:</span> Fly line loading; help with <span class="font-semibold">rod/reel warranty</span> processing.</li>
+        </ul>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15038504397">(503) 850‑4397</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://www.royaltreatmentflyfishing.com/" target="_blank" rel="noopener">Website</a>
+        </div>
+      </article>
+
+      <!-- The Reel Girl (independent tech) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold text-zinc-900 dark:text-white">The Reel Girl — Aloha</h3>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">Independent</span>
+        </div>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Reel service, repairs & upgrades (by appointment)</p>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:15053136190">(505) 313‑6190</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://www.facebook.com/TheReelGirl/" target="_blank" rel="noopener">Facebook page</a>
+        </div>
+      </article>
+
+      <!-- Mike (Old‑school reel tech; former Ollie Damon’s) -->
+      <article class="group rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold text-zinc-900 dark:text-white">Mike — Reel Repair Technician (PDX/Vancouver)</h3>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">Independent</span>
+        </div>
+        <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">Longtime local tech taking reels from home; text/call for drop‑off.</p>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+          <a class="inline-flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 px-3 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900" href="tel:13606064335">(360) 606‑4335</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-zinc-900 text-white px-3 py-2 hover:bg-black" href="https://www.facebook.com/olliedamons/posts/1425805637555463/" target="_blank" rel="noopener">Reference</a>
+        </div>
+      </article>
+
+
+
+</Layout>
